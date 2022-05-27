@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Post and get</title>
+    <link rel="stylesheet" href="stylee.css"> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+<style>
+
+/* #wrapper {
+    height: 800px;
+    width: 100%;
+}
+
+#firstDiv {
+    background-color: violet;
+    top: 20%;
+    left: 35%;
+    margin-top: 7%;
+    margin-left: 30%;
+    width: 40%;
+    height: 300px;
+}
+
+#secondDiv {
+    background-color: tomato;
+    top: 20%;
+    left: 35%;
+    margin-top: 10%;
+    margin-left: 30%;
+    width: 40%;
+    height: 300px;
+}
+
+#navbar {
+    background-color: black;
+}
+
+#navText {
+    font-size: 30px;
+    color: blanchedalmond;
+    font-weight: bolder;
+} */
+
+/*---------------------------------*/
+
+*{
+	box-sizing: border-box;
+  font-family:sans-serif;
+	margin: 0;
+	padding: 0;
+	transition:all 1s;
+}
+body{
+	background: #666;
+    background-image: url('https://image.freepik.com/free-photo/cozy-workplace-home-office-with-laptop-table-against-windows-sunset-online-business-working-study-remote-work_122732-536.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color:#999;
+}
+#welcome{
+  color:#555;
+  text-shadow:0 1px 3px rgb(17, 12, 12),
+              -10px 0 8px black;
+	display:flex;
+	height: 100%;
+	min-height:100vh;
+	min-width: 100vw;
+	overflow: hidden;
+	position: fixed;
+	width:100%;
+}
+#welcome div:hover{
+  text-shadow:0 0 1px white,
+              0 0 0 black;
+}
+#welcome div{
+	align-items:center;
+	background:rgb(29, 28, 28);
+	box-shadow: 0 0 100px black;
+	cursor:pointer;
+	display:flex;
+  font-size:5em;
+	font-weight:bold;
+	width:50%;
+}
+#left{
+	justify-content:flex-end;
+}
+#right{
+	justify-content: flex-start!important;
+}
+.Of{
+	justify-content:flex-end;
+	width:0!important;
+	visibility: hidden;
+}
+#Of{
+	width: 0;
+}
+.On{
+	width: 100%!important;
+}
+
+/*--------------------------------*/
+
+#lorem{
+	align-items: center;
+	display: flex;
+	flex-flow: row wrap;
+	height: 600px;
+	justify-content: center;
+}
+#lorem a{
+	background: #a43f49;
+	box-shadow: 0 15px 18px -10px black;
+	font-size: 25px;
+	margin: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	padding: 1.5em;
+	width: 25em;
+    color:white;
+    font-family: monospace;
+}
+
+
+</style>
+
+</head>
+
+
+<body>
+    <!-- <ul class="nav justify-content-center" id="navbar">
+        <li class="nav-item">
+          <p id="navText">LABOUR4U</p>
+        </li>
+      </ul>
+
+<div id="wrapper">
+    <div id="firstDiv">
+
+    </div>
+    
+    <div id="secondDiv">
+
+    </div>
+</div>         -->
+
+<section id='welcome'>
+    <div id='left'>¡LABO</div>
+    <span id='Of'></span>
+    <div id='right'>UR4U!</div>
+  </section>
+  <div id='lorem'>
+    <a href="fpage.php"> LOOK FOR LABOUR </a>
+    
+    <a href="workerLogin.php"> LOOK FOR A JOB </a>
+  </div>
+  
+
+<script>
+          
+var divs = document.getElementById('welcome');
+divs = divs.getElementsByTagName('div');
+
+for (var i = 0; i < divs.length; i++) {
+	divs[i].onclick = splitScreen;
+}
+
+function splitScreen() {
+	document.getElementById('welcome').style.visibility = 'hidden';
+	var split = document.getElementById('Of');
+	if (true) {
+		split.className = 'On';
+		divs[0].className = 'Of';
+		divs[1].className = 'Of';
+	}
+}
+
+</script> 
+
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</body>

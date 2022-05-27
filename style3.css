@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    overflow: hidden;
+    
+  }
+
+  .nav{
+    background-color: black;
+    padding:15px;
+  position: fixed;
+  top:0;
+  width: 100%;
+  margin-bottom: 60px;
+  max-height: 100px;
+  }
+  li{
+    padding: 20px;
+  }
+    ul{
+    
+     list-style-type:none;
+     margin:0;
+     padding:0;
+     margin-left: 34px;
+  
+   }
+  .mb{
+    display: flex;
+    height: 100%;
+    
+    }
+   .nav h3{
+    
+     color:white;
+     margin-top: 6px;
+     margin-left: 100px;
+   
+    
+     
+   }
+   #sidebar{
+       margin-top: 70px;
+       height: 100%;
+       background-color: black;
+       max-width: 250px;
+   
+       margin-right: 20px;
+       flex:0;
+       transition: all 500ms linear;
+   
+   }
+   #sidebar.active{
+       flex:0.5;
+       min-width: 200px;
+   }
+   
+   .mb a{
+       text-decoration: none;
+       color: white;
+   }
+   .mb a:hover{
+       text-decoration: none;
+       color: white;
+   }
+   .main-container{
+       display: inline-block;
+       align-items: center;
+       overflow:scroll;
+       margin-top: 100px;
+       flex:2;
+       margin-left: 20px;
+   }
+   #sidebar ul li{
+       border-bottom: 0.3px solid rgba(100, 100, 100, 0.3);
+  
+    }
+    #sidebar ul li:hover{
+        background-color: rgba(255, 255, 255, 0.582);
+        color: black;
+        text-decoration: none;
+    }
+    .toggle-btn{
+        position: absolute;
+      /*  left:250px;*/
+        /*top:100px;*/
+        margin-bottom: 4px;
+        margin-top: 5px;
+        margin-right: 100px;
+    }
+   
+    .toggle-btn span{
+        display: block;
+        width: 30px;
+        height: 5px;
+        background-color: white;
+        margin: 5px 0px 0px 25px;
+    }
+    
+    
+    .main-form{
+       position: relative;
+     background-color: rgba(0, 0, 0, 0.849);
+     padding:10px;
+     display: block;
+     margin-right: 45px;
+     margin-left: 5px;
+     min-width: 400px;
+    width: 443px;
+    box-shadow: rgba(0, 0, 0, 0.795);
+    
+    }
+    .box{
+        flex:1;
+    }
+    .boxes{
+        display: inline;
+        border: transparent;
+        padding: 5px;
+        height: 80px;
+       width: 100%;
+        box-shadow: rgba(43, 42, 42, 0.644);
+        border-radius: 15px;
+      
+    }
+    .boxes:hover{
+        background-color: black;
+        color: white;
+        box-shadow: 3px black;
+    }
+   .wrapper{
+       margin-top: 20px;
+       display: flex;
+       flex-wrap: wrap;
+     
+   }
+.ln{
+    float: left;
+    background-color: white;
+    border: none;
+    color: black;
+    padding-right: 120px;
+   
+    
+}
+.nav h3{
+    margin-bottom: 4px;
+}
+.name{
+  
+    color: white;
+    margin-left:60%;
+    margin-top: 2px;
+    float:right;
+}
+
