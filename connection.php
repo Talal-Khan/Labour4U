@@ -7,8 +7,8 @@ $password="abeer???";
 $db="projectdb";
 
 // Command to create connection
-//$mysql=mysqli_connect($host,$user,$password,$db);
-$conn = new PDO($host, $user, $password, $db);
+$mysql=mysqli_connect($host,$user,$password,$db);
+
 
 // if connection not created
 if(!$mysql)
