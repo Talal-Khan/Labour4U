@@ -1,7 +1,7 @@
 <?php 
-$host="localhost";
-$user="root";
-$password="";
+$host="projectdb.cxsld4crrrcy.us-east-1.rds.amazonaws.com";
+$user="admin";
+$password="abeer???";
 
 // Database Name
 $db="projectdb";
